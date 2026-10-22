@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A1 BROADBAND 5G</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#08111f;color:white;font-family:Arial,sans-serif}
+header{padding:24px 18px;background:linear-gradient(135deg,#073b83,#087cf0)}
+h1{font-size:25px;margin:0 0 8px}
+header p{margin:0;color:#e2efff}
+main{padding:18px;max-width:600px;margin:auto}
+h2{font-size:19px}
+.card{background:#142238;border:1px solid #2d4565;border-radius:14px;padding:16px;margin:12px 0}
+.speed{font-size:23px;font-weight:bold;color:#69b5ff}
+button{background:#1682ff;color:white;border:0;border-radius:9px;padding:12px;width:100%;font-size:16px}
+.note{color:#bdcbe0;font-size:13px;line-height:1.5}
+</style>
+</head>
+<body>
+<header>
+<h1>A1 BROADBAND 5G</h1>
+<p>Fast Internet. Endless Entertainment.</p>
+</header>
+<main>
+<h2>Choose Your Internet Plan</h2>
+<div id="plans"></div>
+<div class="card">
+<h2>OTT Entertainment</h2>
+<p>Prime Video · JioHotstar · ZEE5 · Sony LIV</p>
+<p class="note">OTT access depends on the selected pack and provider activation.</p>
+</div>
+<div class="card">
+<h2>IPTV Packages</h2>
+<p>Star · Sony · Zee · Colors · All Marathi</p>
+</div>
+<div class="card">
+<h2>Customer Support</h2>
+<p>Need help with your connection?</p>
+<button onclick="alert('Support ticket feature will be connected to the backend next.')">Raise Support Ticket</button>
+</div>
+<div class="card">
+<h2>AI Assistant</h2>
+<p>Get help with plans and internet support.</p>
+<button onclick="alert('AI assistant requires backend integration.')">Ask AI Assistant</button>
+</div>
+<p class="note">Demo interface only. Online payments, customer login, live tickets and Synnefo activation are not connected yet.</p>
+</main>
+<script>
+const speeds=[40,50,70,90,100];
+document.getElementById('plans').innerHTML=speeds.map(speed=>`
+<div class="card">
+<div class="speed">${speed} Mbps 5G</div>
+<p>Unlimited Internet Plan</p>
+<button onclick="alert('Recharge and payment gateway integration is required.')">Select Plan</button>
+</div>`).join('');
+</script>
+</body>
+  </html>
+  
